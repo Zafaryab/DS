@@ -7,7 +7,7 @@ void main()
     printf("Enter the array size: ");
     scanf("%d",&n);
     int a[n];
-    printf("Enter %d integer number is sorted (asc or dsc) form:\n",n);
+    printf("Enter %d integer number in sorted (asc or dsc) form:\n",n);
     for(int i=0;i<n;i++)
     {
         scanf("%d",&a[i]);
