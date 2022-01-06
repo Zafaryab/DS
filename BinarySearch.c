@@ -1,12 +1,12 @@
 //This program works for both ascending and descending order..
 #include<stdio.h>
-binarySearch(int a[], int n, int item);
+int binarySearch(int a[], int n, int item);
 void main()
 {
     int n, item, loc;
     printf("Enter the array size: ");
     scanf("%d",&n);
-    int a[n];
+    int a[10];
     printf("Enter %d integer number in sorted (asc or dsc) form:\n",n);
     for(int i=0;i<n;i++)
     {
@@ -20,7 +20,7 @@ void main()
     else
         printf("\nLocation of element %d = %d (index value)\n\n", item, loc);
 }
-binarySearch(int *data, int n, int item)
+int binarySearch(int *data, int n, int item)
 {
     int beg = 0, end = n-1, mid = (beg + end)/2, c=0, l;
     l=(data[0]<data[n-1])?1:0;
