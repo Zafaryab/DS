@@ -1,49 +1,47 @@
-#include<stdio.h>
+#include <stdio.h>
 shellSort(int *a, int n);
 void main()
 {
     int n;
     printf("Enter the array size: ");
-    scanf("%d",&n);
+    scanf("%d", &n);
     int a[10];
-    printf("Enter %d integer numbers:\n",n);
-    for(int i=0;i<n;i++)
+    printf("Enter %d integer numbers:\n", n);
+    for (int i = 0; i < n; i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d", &a[i]);
     }
     printf("\n\nInitial Array:\t");
-    for(int i=0;i<n;i++)
+    for (int i = 0; i < n; i++)
     {
-        printf("%4d  ",a[i]);
+        printf("%4d  ", a[i]);
     }
-     printf("\n");
+    printf("\n");
     shellSort(a, n);
     printf("\n\nAfter Sorting:\t");
-    for(int i=0;i<n;i++)
+    for (int i = 0; i < n; i++)
     {
-        printf("%4d  ",a[i]);
+        printf("%4d  ", a[i]);
     }
-     printf("\n");
+    printf("\n");
 }
 shellSort(int *a, int n)
 {
-    int c=0, j;
-    for(int i=n/2;i;i--)
+    int c = 0, j;
+    for (int i = n / 2; i; i--)
     {
-        for(j=0;(i+j)<n;j++)
+        for (j = 0; (i + j) < n; j++)
         {
-            if(a[j]>a[j+i])
+            if (a[j] > a[j + i])
             {
                 int temp = a[j];
-                a[j] = a[j+i];
-                a[j+i] = temp;
+                a[j] = a[j + i];
+                a[j + i] = temp;
             }
         }
-        printf("Pass%d:\t\t",++c);
-        for(j=0; j<n;j++)
-               printf("%4d  ",a[j]);
+        printf("Pass%d:\t\t", ++c);
+        for (j = 0; j < n; j++)
+            printf("%4d  ", a[j]);
         printf("\n");
     }
-
 }
-
