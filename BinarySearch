@@ -1,4 +1,4 @@
-//This program works for both ascending and descending order
+//This program works for both ascending and descending order..
 #include<stdio.h>
 binarySearch(int a[], int n, int item);
 void main()
