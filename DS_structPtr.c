@@ -9,7 +9,7 @@ void main()
     person per, *per_ptr;
     per_ptr = &per;
     printf("Enter the age: ");
-    scanf("%d", &per_ptr->age);
+    scanf("%d", &per_ptr->age); //  ->
     printf("Enter the weight: ");
     scanf("%f", &per_ptr->weight);
 

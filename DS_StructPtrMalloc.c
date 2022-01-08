@@ -8,6 +8,7 @@ void main()
 {
     person per, *per_ptr;
     per_ptr = (person *)malloc(sizeof(person));
+
     printf("Enter the age: ");
     scanf("%d", &per_ptr->age);
     printf("Enter the weight: ");
